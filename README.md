@@ -92,7 +92,7 @@ So, edit the upsd.users file and add a new user with privileges to enable/disabl
 
 ### 4. Restart the upsd service
 ```shell
-synoservice --restart ups-usb
+sudo synosystemctl restart ups-usb
 (wait a few seconds)
 ```
 

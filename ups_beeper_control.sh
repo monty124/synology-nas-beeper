@@ -17,7 +17,7 @@ fi
 if [ "$goal" == "enable" ] || [ "$goal" == "disable" ]
 then
 	echo "$goal beeper..."
-	python /root/upscmd.py beeper.${goal}
+	python2 /root/upscmd.py beeper.${goal}
 	echo "Waiting 5 seconds for UPS to update state..."
 	sleep 5
 	if [[ "$(upsc ups ups.beeper.status)" == "${goal}d" ]]
